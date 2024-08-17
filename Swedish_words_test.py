@@ -31,4 +31,4 @@ def start_f(file_path):
     else:
         pass           
        
-start_f(sys.argv[1])
+start_f(sys.argv[1]) # colors.cvs
