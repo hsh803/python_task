@@ -49,7 +49,7 @@ def get_s(my_p):
     return s_lst
 
 def get_duration():
-    df = pd.read_csv("file.csv", sep=';')
+    df = pd.read_csv("file.csv", sep=';') # file.csv is created by file.txt (transcript) and file.wav (audio) using webMAUS Basic service
     duration = df.groupby('TOKEN').agg({'ORT': pd.Series.unique, 'DURATION': 'sum'})
     #duration = duration.groupby('ORT').agg({'DURATION': 'mean'})
     dic = []
